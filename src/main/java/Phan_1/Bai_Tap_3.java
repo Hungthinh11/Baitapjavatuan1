@@ -11,21 +11,27 @@ import java.util.Scanner;
  * @author ADMIN
  */
 public class Bai_Tap_3 {public static void main (String[] args){
-    double a,b;
-    double nghiem;
     Scanner sc= new Scanner(System.in);
     System.out.print("cho biet so thu 1 la:" );
-    a=sc.nextDouble();
+    double a=sc.nextDouble();
     System.out.print("cho biet so thu 2:");
-    b=sc.nextDouble();
+    double b=sc.nextDouble();
     
     if (a==0)
     {
         if (b==0)
-            
-                
+        {
+            System.out.println("Phuowng trinh vo so nghiem.");
+        }
+        else{
+            System.out.println("phuong trinh vo nghiem");      
+            }
     }
-    System.out.println("tong 2 so la:"+ nghiem);
-    }
-    
+        else{
+     double x = -b/a ;
+                System.out.println("nghiem cua phuong trinh nay la:"+x);}
+
 }
+}
+
+
